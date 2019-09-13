@@ -15,3 +15,4 @@
 		3.3.2 Load contacts from file
 	3.4 Other
 		3.4.1 Zoom in/out and scroll whenever necessary
+		Last seen or message seen feature can be added
