@@ -16,5 +16,10 @@ Functional Requirements:
   3.1 The system shall prompt the user for permission to access the phone's camera and gallery for photo options.
   3.2 The system shall allow the user to accept or deny permission to access the phone's camera and gallery.
   3.3 The system shall prompt the user for permission to access the phone's camera and gallery again if it was previously denied permission.
-
+  
+  4.1 The system shall allow the user to search for contact using any of the follwing iffo:
+      Name, Address, Email, Phone Number, and Picture.  
+  4.2 The system shall allow grouping within the contact list
+  4.3 The system shall allow sorting contacts by name and by group name
+  
 Use case Diagram:
