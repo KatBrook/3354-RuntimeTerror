@@ -18,10 +18,14 @@ Functional Requirements:
     1.5. The system shall store the information in the contact manager app.
 
 
-2.
+2. The user shall be able to add multiple phone numbers per contact
+    2.1. The system shall allow the user to add multiple phone numbers for a single contact.
 
 
-3.
+3. The user shall be able to add a photo label for a contact
+    3.1. The system shall prompt the user for permission to access the phone's camera and gallery for photo options.
+    3.2. The system shall allow the user to accept or deny permission to access the phone's camera and gallery.
+    3.3. The system shall prompt the user for permission to access the phone's camera and gallery again if it was previously denied permission.
 
 
 4.
@@ -39,7 +43,13 @@ Functional Requirements:
 6.
 
 
-7.
+7.  The system shall allow the user to manage contact groups.
+    7.1. The system shall allow the user to add one or more contacts into a preexisting group.
+    7.2. The system shall allow the user to remove one or more contacts into a preexisting group.
+    7.3. The system shall allow the user to delete a group.
+    7.4. The system shall allow the user to edit features of the group, such as the group name.
+    7.5. The system shall allow the user to view a list of all members of the contact group.
+    7.6. The system shall display the number of members
 
 
 8.
