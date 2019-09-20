@@ -28,9 +28,12 @@ Functional Requirements:
 
 2.
 
+
 3.
 
+
 4.
+
 
 5. The system shall allow the user to directly make phone calls and send SMS from the contact view 
     
@@ -46,19 +49,27 @@ Functional Requirements:
           
           5.2.1. The system shall take the user to the sms app to send a message with the contacts phone number filled in as the receiver of the message
 
+
 6.
+
 
 7.
 
+
 8.
+
 
 9.
 
+
 10.
+
 
 11.
 
+
 12.
+  
   
   
 Use Case Diagram:
