@@ -28,7 +28,10 @@ Functional Requirements:
     3.3. The system shall prompt the user for permission to access the phone's camera and gallery again if it was previously denied permission.
 
 
-4.
+4. The system shall allow the user to blacklist a phone number
+    4.1 The system shall prevent a text or call from being received by the phone number
+    4.2 The system shall allow the user to unblock a phone number, now allowing the user to receive calls or texts from the previously           blocked number
+
 
 
 5. The system shall allow the user to directly make phone calls and send SMS from the contact view.  
@@ -40,7 +43,11 @@ Functional Requirements:
           5.2.1. The system shall take the user to the sms app to send a message with the contacts phone number filled in as the receiver of the message.
 
 
-6.
+6. The system shall allow the user to add contact groups
+    6.1 The system shall allow contacts to be added into groups such as work and family
+    6.2 The system shall allow the user to view contacts saved in a group
+    6.3 The system shall allow the user the ability to remove contacts from groups
+
 
 
 7.  The system shall allow the user to manage contact groups.
