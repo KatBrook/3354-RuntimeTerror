@@ -66,14 +66,18 @@ Functional Requirements:
     9.4. Sorting shall provide options for sharing and printing the sorted list
 
 
-10.
+10.The system should allow user to export contacts to file
+   10.1 The system should prompt the user for permission to read contacts
+   10.2 The system should read contacts one by one and create a vcf file
 
+11.The system should allow user to load contacts from file
+   11.1 The system should prompt the user for permission to write contacts
+   11.2 The system should read vcf file and analyze it
+   11.3 The system should create contacts based on the contents in vcf file
 
-11.
+12 The system should allow user to scroll whenever necessary
+   12.1 The system should allow user to use finger gestures to scroll and manage contacts
 
-
-12.
-  
   
   
 Use Case Diagram:
