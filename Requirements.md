@@ -52,8 +52,6 @@ Use Case Diagram:
 
 ![UseCase](https://user-images.githubusercontent.com/50084833/65300539-6d025900-db39-11e9-86bb-8b7a3951292c.PNG)
 
-![UseCase](https://user-images.githubusercontent.com/50084833/65300536-6a076880-db39-11e9-8523-c09bac2c276e.PNG)
 
-UseCase.PNG
 
 
