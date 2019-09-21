@@ -71,17 +71,18 @@ Functional Requirements:
     9.2. Sorting shall sort based on contact type: personal, professional
     9.3. Sorting should provide options for sorting based on zip code, area code, occupation, email address
     9.4. Sorting shall provide options for sharing and printing the sorted list
+   
+10.The system should allow user to export contacts to file
+   10.1 The system should prompt the user for permission to read contacts
+   10.2 The system should read contacts one by one and create a vcf file
 
+11.The system should allow user to load contacts from file
+   11.1 The system should prompt the user for permission to write contacts
+   11.2 The system should read vcf file and analyze it
+   11.3 The system should create contacts based on the contents in vcf file
 
-10.
-
-
-11.
-
-
-12.
-  
-  
+12 The system should allow user to scroll whenever necessary
+   12.1 The system should allow user to use finger gestures to scroll and manage contacts
   
 Use Case Diagram:
 
