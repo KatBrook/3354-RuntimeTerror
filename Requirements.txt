@@ -28,7 +28,9 @@ Functional Requirements:
     3.3. The system shall prompt the user for permission to access the phone's camera and gallery again if it was previously denied permission.
 
 
-4.
+4. The system shall allow the user to blacklist a phone number
+    4.1 The system shall prevent a text or call from being received by the phone number
+    4.2 The system shall allow the user to unblock a phone number, now allowing the user to receive calls or texts from the previously blocked number
 
 
 5. The system shall allow the user to directly make phone calls and send SMS from the contact view.  
@@ -40,7 +42,10 @@ Functional Requirements:
           5.2.1. The system shall take the user to the sms app to send a message with the contacts phone number filled in as the receiver of the message.
 
 
-6.
+6. The system shall allow the user to add contact groups
+    6.1 The system shall allow contacts to be added into groups such as work and family
+    6.2 The system shall allow the user to view contacts saved in a group
+    6.3 The system shall allow the user the ability to remove contacts from groups
 
 
 7.  The system shall allow the user to manage contact groups.
@@ -59,6 +64,7 @@ Functional Requirements:
     8.4. Search shall support wildcard search entry
     8.5. Search shall provide options for sharing and printing the search result
 
+
 9. The system shall allow sorting contacts by name and by group name
     9.1. Sorting shall support both ascending/descending order
     9.2. Sorting shall sort based on contact type: personal, professional
@@ -70,18 +76,16 @@ Functional Requirements:
    10.1 The system should prompt the user for permission to read contacts
    10.2 The system should read contacts one by one and create a vcf file
 
+
 11.The system should allow user to load contacts from file
    11.1 The system should prompt the user for permission to write contacts
    11.2 The system should read vcf file and analyze it
    11.3 The system should create contacts based on the contents in vcf file
 
+
 12 The system should allow user to scroll whenever necessary
    12.1 The system should allow user to use finger gestures to scroll and manage contacts
 
-  
-  
 Use Case Diagram:
 
 ![UseCase](https://user-images.githubusercontent.com/50084833/65300539-6d025900-db39-11e9-86bb-8b7a3951292c.PNG)
-
-
