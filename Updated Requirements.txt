@@ -1,0 +1,77 @@
+Definitions, Acronyms, and Abbreviations:
+
+SMS: Short Message Service
+
+Blacklist: A list of people or things that are regarded as unacceptable or untrustworthy and should be excluded or avoided. By blacklisting or blocking someone on your phone, you are preventing that person from being able to contact you either from calling or texting.
+
+
+
+
+Functional Requirements:
+
+1. The user shall be able to add, view, edit, and delete their contacts
+	1.1. The system shall require one of the following information from the user to create a contact: Name, Address, Email, Cell Phone Number, Home Phone Number, or Work Phone Number.
+		1.1.1. The system shall not create a contact if all of the following		 	information is blank: Name, Address, Email, Cell Phone Number, Home Phone Number, and Work Phone Number.
+	1.2. The system shall allow the user to view a contact’s information by clicking on the tab corresponding to the contact.
+	1.3. The system shall allow the user to edit the information they provided for a contact.
+		1.3.1. The system shall not allow the user to leave the contact’s information blank.
+			1.3.1.1. The system shall disable the save button should the user leave all fields for the contact blank.
+	1.4. The system shall allow the user to delete a contact by swiping left on it while in the home page of the app.
+	1.5. The system shall allow the user to delete a contact from the contact page and present a message prompting the user if they wish to proceed with the deletion.
+	1.6. The system shall store the information in the contact manager app.
+
+2. The user shall be able to add multiple phone numbers per contact
+	2.1. The system shall allow the user to add multiple phone numbers for a single contact.
+		2.1.1. The system shall only allow three phone numbers for a contact named: Cell Phone Number, Home Phone Number, and Work Phone Number.
+
+3. The user shall be able to add a photo label for a contact
+	3.1. The system shall prompt the user for permission to access the phone's gallery for photo options.
+	3.2. The system shall allow the user to accept or deny permission to access the phone's gallery.
+	3.3. The system shall prompt the user for permission to access the phone's gallery again if it was previously denied permission.
+
+4.  The system shall allow the user to blacklist a contact
+	4.1. The system shall display a prompt asking if the user wants to blacklist a contact.
+		4.1.1. The system shall prevent texts, calls, or emails from being sent to the contact if the user selected yes.
+	4.2. The system shall display a prompt asking if the user wants to un-blacklist a contact.
+		4.2.1 The system shall allow texts, calls, or emails to be sent to the previously blocked contact if the user selected yes.
+
+5. The system shall allow the user to directly make phone calls, send SMS, and send emails from the contact page 
+	5.1. The system shall display a button to call a contact in the contacts profile in the contact manager
+		5.1.1. The system shall have buttons for each individual phone number that allows the user to call that number
+		5.1.2. The system shall take the user to the call app and call the number chosen by the user for that contact
+		5.1.3. The system should go to voicemail if the phone number called is invalid or not answered
+	5.2. The system shall display a button to send an SMS to a contact in the contacts profile in the contact manager
+		5.2.1. The system shall have buttons for each individual phone number that allows the user to send an SMS to that contact’s phone number
+		5.2.2. The system shall take the user to the sms app to send a message with the contacts phone number filled in as the receiver of the message
+	5.3. The system shall display a button to send an email to a contact in the contacts profile in the contact manager
+		5.3.1. The system shall have a button for a contacts email if the email field is filled, that allows the user to send an email to that contact’s email
+		5.3.2. The system shall take the user to the email app to send an email with the contacts email filled in as the receiver of the email
+
+6. The system shall allow the user to add contact groups
+	6.1. The system shall allow a contact group to add a group name
+	6.2. The system shall allow a contact group to add a group photo
+	6.3. The system shall allow contacts to be added into a contact group
+	6.4. The system shall allow the user to view contacts saved in a group
+	6.5. The system shall allow the user the ability to remove contacts from groups
+
+7. The system shall allow the user to manage contact groups.
+	7.1. The system shall allow the user to add one or more contacts into a preexisting group.
+	7.2. The system shall allow the user to remove one or more contacts from a preexisting group.
+	7.3. The system shall allow the user to delete a group.
+	7.4. The system shall allow the user to edit features of the group, such as the group name, group photo, and group members.
+	7.5. The system shall allow the user to view a list of all members of the contact group.
+
+8. The system shall allow the user to search for a contact by name or group name
+	8.1. The search function shall accept entry in English
+	8.2. The search function shall provide filtering options
+	8.3. The search function shall show the search results in alphabetical order
+
+9. The system shall allow sorting contacts by name and by group name
+	9.1. The sorting function shall support sorting in alphabetical order
+
+10. The system should allow user to scroll whenever necessary
+	10.1. The system should allow user to use finger gestures to scroll and manage contacts
+
+
+Use Case Diagram:
+
