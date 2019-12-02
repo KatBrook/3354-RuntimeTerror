@@ -113,8 +113,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
+                android:background="@android:color/holo_red_light"
                 android:onClick="cancelButtonPressed"
-                android:text="@android:string/cancel" />
+                android:text="@android:string/cancel"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/saveButton"
@@ -122,8 +124,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
+                android:background="#00CC00"
                 android:onClick="saveButtonPressed"
-                android:text="@string/save" />
+                android:text="@string/save"
+                android:textColor="@android:color/white" />
         </LinearLayout>
 
     </RelativeLayout>
