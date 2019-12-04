@@ -1,0 +1,33 @@
+package com.example.contact;
+import android.view.View;
+
+import androidx.test.rule.ActivityTestRule;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class MainActivityTest {
+@Rule
+public ActivityTestRule<MainActivity> testRule =new ActivityTestRule<MainActivity>(MainActivity.class);
+    private MainActivity test=null;
+    @Before
+    public void setUp() throws Exception {
+        test=testRule.getActivity();
+    }
+
+    @Test
+    public void testsearchcontact()
+    {
+        View view= test.findViewById(R.id.action_search_contact);
+        assertNotNull(view);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        test=null;
+    }
+}
