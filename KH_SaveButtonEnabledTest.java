@@ -1,5 +1,6 @@
 package com.example.contact;
 
+import androidx.test.espresso.ViewAction;
 import androidx.test.rule.ActivityTestRule;
 
 import org.junit.After;
@@ -31,6 +32,7 @@ public class KH_SaveButtonEnabledTest
         addEditContactActivity = addEditContactActivityRule.getActivity();
     }
 
+    /**
     @Test
     public void checkForValues()
     {
@@ -51,15 +53,19 @@ public class KH_SaveButtonEnabledTest
 
         allFieldsEntered();
     }
+    **/
 
+    @Test
     public void noFieldsEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -75,14 +81,18 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+
+    @Test
     public void nameFieldEntered()
     {
-        assertNotNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText("Name"), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -98,14 +108,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void cellFieldEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNotNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText("Mobile"), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -121,14 +134,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void homeFieldEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNotNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText("Home"), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -144,14 +160,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void workFieldEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNotNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText("Work"), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -167,14 +186,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void emailFieldEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNotNull(R.id.emailInput);
-        assertNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText("Email"), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText(""), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -190,14 +212,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void addressFieldEntered()
     {
-        assertNull(R.id.userNameInput);
-        assertNull(R.id.mobileNumInput);
-        assertNull(R.id.homeNumInput);
-        assertNull(R.id.workNumInput);
-        assertNull(R.id.emailInput);
-        assertNotNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText(""), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText("Address"), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
@@ -213,14 +238,17 @@ public class KH_SaveButtonEnabledTest
         }
     }
 
+    @Test
     public void allFieldsEntered()
     {
-        assertNotNull(R.id.userNameInput);
-        assertNotNull(R.id.mobileNumInput);
-        assertNotNull(R.id.homeNumInput);
-        assertNotNull(R.id.workNumInput);
-        assertNotNull(R.id.emailInput);
-        assertNotNull(R.id.addressInput);
+        //Populate text fields
+
+        onView(withId(R.id.userNameInput)).perform(typeText("Name"), closeSoftKeyboard());
+        onView(withId(R.id.mobileNumInput)).perform(typeText("Mobile"), closeSoftKeyboard());
+        onView(withId(R.id.homeNumInput)).perform(typeText("Home"), closeSoftKeyboard());
+        onView(withId(R.id.workNumInput)).perform(typeText("Work"), closeSoftKeyboard());
+        onView(withId(R.id.emailInput)).perform(typeText("Email"), closeSoftKeyboard());
+        onView(withId(R.id.addressInput)).perform(typeText("Address"), closeSoftKeyboard());
 
         //Immediately try to click on save button with no text fields entered
         //onView(withId(R.id.saveButtonContact)).perform(click());
